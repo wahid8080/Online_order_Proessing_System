@@ -69,6 +69,7 @@ public class OrderDetails extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                orderStatusArrayList.clear();
                 for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
 
                     OrderStatus m = dataSnapshot1.getValue(OrderStatus.class);

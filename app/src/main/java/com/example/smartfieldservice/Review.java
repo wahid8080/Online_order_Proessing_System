@@ -46,6 +46,7 @@ public class Review extends AppCompatActivity {
         mData.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                feedbackArrayList.clear();
                 for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
 
                     Feedback m = dataSnapshot1.getValue(Feedback.class);
