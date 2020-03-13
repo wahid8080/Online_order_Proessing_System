@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Inventory management and order processing system</string>
+
+    <string name="news_des">
+        As the world works to achieve the Sustainable Development Goals, it is critical that businesses lead for trust. Key to this is how we work
+        in closer partnership than ever before, meaning new levels of transparency from all parties.
+    </string>
+
+    <string name="job_des">
+        At Unilever you can build a fulfilling career working with great people and well-loved brands.
+    </string>
+    <string name="shop_details">
+        A product description
+    </string>
+
+
+    <string-array name="what_are_you">
+        <item>Select Organization</item>
+        <item>Company</item>
+        <item>ShopKeeper</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="submit">Submit</string>
+</resources>

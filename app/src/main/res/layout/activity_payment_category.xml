@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentCategory"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:onClick="bKash"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/bkeshImage"
+                android:layout_margin="10dp"
+                android:src="@drawable/bkesh"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/bkeshImage"
+                android:text="bKash"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:onClick="MasterCard"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/masterCardImage"
+                android:layout_margin="10dp"
+                android:src="@drawable/master_card"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/masterCardImage"
+                android:text="Master Card"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:onClick="cashOnDelivery"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cashOnDeliveryImage"
+                android:layout_margin="10dp"
+                android:src="@drawable/cast_on_delibery"
+                android:layout_width="100dp"
+                android:layout_height="78dp"/>
+            <TextView
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cashOnDeliveryImage"
+                android:text="Cash On Delivery"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

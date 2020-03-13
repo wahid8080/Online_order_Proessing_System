@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "734628158581",
+    "firebase_url": "https://smartfieldservice-9f41f.firebaseio.com",
+    "project_id": "smartfieldservice-9f41f",
+    "storage_bucket": "smartfieldservice-9f41f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734628158581:android:79438bd95d057c1b02ac3c",
+        "android_client_info": {
+          "package_name": "com.example.smartfieldservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734628158581-ient8eqoe7iqs7d4jvc9k6155l7229td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6EVZ1UDPr7J3re7dsdeZrU8SvQ4S5Z7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734628158581-ient8eqoe7iqs7d4jvc9k6155l7229td.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

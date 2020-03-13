@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobs">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:text="Careers"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="At Unilever you are more
+            than your job title, you are part of the
+            world’s most successful, purpose-led business.
+            Work with brands that are well-loved around the world,
+            that improve the lives of our consumers and the
+            communities around us"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Future Leaders Programme"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Our Future Leaders Programme will ignite the leader
+             in you. This unique programme is designed to develop Unilever’s
+             Future Leaders (UFL) by providing challenging and purposeful
+             opportunities that accelerate your readiness to take on business
+             leadership roles. The programme encompasses rotations within and across
+             functions in an accelerated learning environment. This includes extended
+             leadership contact, formal training, professional development,
+             big responsibilities and international exposure early on in your career"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
