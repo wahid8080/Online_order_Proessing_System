@@ -105,6 +105,7 @@ public class ViewOrderByCustomerAdepter extends RecyclerView.Adapter<ViewOrderBy
                 holder.orderAccept.setVisibility(View.GONE);
                 holder.deliveryCompleteImg.setVisibility(View.VISIBLE);
                 holder.delivering.setVisibility(View.GONE);
+                holder.packingForImae.setVisibility(View.GONE);
 
                 holder.orderAccepted.setText("delivery Complete");
 
@@ -233,6 +234,7 @@ public class ViewOrderByCustomerAdepter extends RecyclerView.Adapter<ViewOrderBy
                         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("OrderCustomerVaucher").child(orderStatusForCompany.getRandomKey()).child("deliveryComplete");
                         databaseReference.setValue("delivery Complete");
                         holder.deliveryComplete.isChecked();
+                        holder.isbeingSent.setVisibility(View.GONE);
                     }
                 });
 

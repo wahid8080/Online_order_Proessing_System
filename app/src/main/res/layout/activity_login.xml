@@ -33,7 +33,7 @@
                 android:layout_below="@id/logoForLoginId"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="70dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 app:errorEnabled="true"
@@ -48,8 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:hint="E m a i l"
-                    android:inputType="textEmailAddress"
-                    android:textSize="24dp" />
+                    android:inputType="textEmailAddress"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -76,8 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:hint="P a s s w o r d"
-                    android:inputType="textPassword"
-                    android:textSize="24dp" />
+                    android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
@@ -91,8 +89,9 @@
                 android:weightSum="2">
 
                 <Button
+                    android:layout_marginBottom="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/btn_background_pink_no_curb"
                     android:onClick="goToLogin"
                     android:text="Login"
@@ -102,13 +101,13 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/btn_background_white"
                     android:onClick="goToSingUp"
                     android:text="Sing up"
                     android:textAllCaps="false"
-                    android:textColor="#009688"
+                    android:textColor="@color/colorAccent"
                     android:textSize="22dp" />
 
             </LinearLayout>

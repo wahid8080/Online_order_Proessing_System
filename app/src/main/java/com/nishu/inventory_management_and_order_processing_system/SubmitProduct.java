@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.nishu.inventory_management_and_order_processing_system.ModelClasses.ImageConvater;
 import com.nishu.inventory_management_and_order_processing_system.ModelClasses.ProductUpload;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,6 +43,7 @@ public class SubmitProduct extends AppCompatActivity {
     DatabaseReference databaseReference;
     FirebaseUser user;
     ImageConvater  imageConvater;
+    boolean isCapture;
     String stringImage;
 
     @Override
@@ -70,12 +72,21 @@ public class SubmitProduct extends AppCompatActivity {
                 String desc = productDes.getText().toString();
                 String offer = productOffer.getText().toString();
 
-
-                databaseReference = FirebaseDatabase.getInstance().getReference("Product").child(key).child(name);
-                ProductUpload productUpload = new ProductUpload(name,desc,price,stringImage,user.getUid(),offer);
-                databaseReference.setValue(productUpload);
-                Toast.makeText(SubmitProduct.this,"Upload Successful",Toast.LENGTH_LONG).show();
-                startActivity(new Intent(SubmitProduct.this,ProfileForCompany.class));
+                if (validate(v) && !offer.isEmpty())
+                {
+                    databaseReference = FirebaseDatabase.getInstance().getReference("Product").child(key).child(name);
+                    ProductUpload productUpload = new ProductUpload(name,desc,price,stringImage,user.getUid(),offer);
+                    databaseReference.setValue(productUpload);
+                    Toast.makeText(SubmitProduct.this,"Upload Successful",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(SubmitProduct.this,ProfileForCompany.class));
+                } else if (validate(v) && offer.isEmpty())
+                {
+                    databaseReference = FirebaseDatabase.getInstance().getReference("Product").child(key).child(name);
+                    ProductUpload productUpload = new ProductUpload(name,desc,price,stringImage,user.getUid(),"0");
+                    databaseReference.setValue(productUpload);
+                    Toast.makeText(SubmitProduct.this,"Upload Successful",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(SubmitProduct.this,ProfileForCompany.class));
+                }
             }
         });
 
@@ -108,10 +119,41 @@ public class SubmitProduct extends AppCompatActivity {
                 bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), image);
                 stringImage = imageConvater.imageToString(bitmap);
 
+                isCapture = true;
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
+
+    public boolean validate(final View view) {
+        boolean valid = true;
+        String name = productName.getText().toString();
+        String price = productPrice.getText().toString();
+        String desc = productDes.getText().toString();
+
+        if (name.isEmpty()) {
+            Snackbar.make(view, "Input Product Name", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+            return false;
+        }
+        else if (price.isEmpty()) {
+            Snackbar.make(view, "Input Price", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+            return false;
+        } else if (desc.isEmpty()) {
+            Snackbar.make(view, "Input Product Description", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+            return false;
+        } else if (!isCapture) {
+            Snackbar.make(view, "Input Picture", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+            return false;
+        }
+
+        return valid;
+    }
+
 
 }
