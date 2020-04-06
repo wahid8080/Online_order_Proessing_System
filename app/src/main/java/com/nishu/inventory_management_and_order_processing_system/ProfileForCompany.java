@@ -89,7 +89,7 @@ public class ProfileForCompany extends AppCompatActivity {
                         profileImage.setImageBitmap(returnImage);
                     }
                     if (companysInfo.getCoverPic() != null) {
-                        Bitmap returnImage = imageConvater.StringToBitMap(companysInfo.getProfilePic());
+                        Bitmap returnImage = imageConvater.StringToBitMap(companysInfo.getCoverPic());
                         coverImage.setImageBitmap(returnImage);
                     }
                     if (companysInfo.getLicenceImage() != null) {
