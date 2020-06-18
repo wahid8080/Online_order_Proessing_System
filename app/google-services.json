@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "334947791101",
-    "firebase_url": "https://inventory-management-9eeb9.firebaseio.com",
-    "project_id": "inventory-management-9eeb9",
-    "storage_bucket": "inventory-management-9eeb9.appspot.com"
+    "project_number": "734628158581",
+    "firebase_url": "https://smartfieldservice-9f41f.firebaseio.com",
+    "project_id": "smartfieldservice-9f41f",
+    "storage_bucket": "smartfieldservice-9f41f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:334947791101:android:c097847cb8222957020e94",
+        "mobilesdk_app_id": "1:734628158581:android:50c65ca51639a50d02ac3c",
         "android_client_info": {
-          "package_name": "com.nishu.inventory_management_and_order_processing_system"
+          "package_name": "com.develop.online_order_processing_system"
         }
       },
       "oauth_client": [
         {
-          "client_id": "334947791101-brqod1gpu82jrc0dkn5onbuiv089jpba.apps.googleusercontent.com",
+          "client_id": "734628158581-ient8eqoe7iqs7d4jvc9k6155l7229td.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBKBl-X7NhoUVcB9IH6yUyzIBjYCijAjMo"
+          "current_key": "AIzaSyB6EVZ1UDPr7J3re7dsdeZrU8SvQ4S5Z7A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "334947791101-brqod1gpu82jrc0dkn5onbuiv089jpba.apps.googleusercontent.com",
+              "client_id": "734628158581-ient8eqoe7iqs7d4jvc9k6155l7229td.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

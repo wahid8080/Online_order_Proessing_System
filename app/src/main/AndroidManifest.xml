@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.nishu.inventory_management_and_order_processing_system">
+    package="com.develop.online_order_processing_system">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -19,21 +19,21 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:allowBackup">
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Review" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.bKask" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.PaymentCategory" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Jobs" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.FeedBack" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Message" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.ViewCustomerOrder" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Payment" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.LoginForDeliveryMan" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.DeliveryManProfile" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.OrderDetails" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.ViewProduct" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.ViewCompany" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Empty" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.ViewShopKepper" />
+        <activity android:name="com.develop.online_order_processing_system.Review" />
+        <activity android:name="com.develop.online_order_processing_system.bKask" />
+        <activity android:name="com.develop.online_order_processing_system.PaymentCategory" />
+        <activity android:name="com.develop.online_order_processing_system.Jobs" />
+        <activity android:name="com.develop.online_order_processing_system.FeedBack" />
+        <activity android:name="com.develop.online_order_processing_system.Message" />
+        <activity android:name="com.develop.online_order_processing_system.ViewCustomerOrder" />
+        <activity android:name="com.develop.online_order_processing_system.Payment" />
+        <activity android:name="com.develop.online_order_processing_system.LoginForDeliveryMan" />
+        <activity android:name="com.develop.online_order_processing_system.DeliveryManProfile" />
+        <activity android:name="com.develop.online_order_processing_system.OrderDetails" />
+        <activity android:name="com.develop.online_order_processing_system.ViewProduct" />
+        <activity android:name="com.develop.online_order_processing_system.ViewCompany" />
+        <activity android:name="com.develop.online_order_processing_system.Empty" />
+        <activity android:name="com.develop.online_order_processing_system.ViewShopKepper" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -50,17 +50,17 @@
             android:value="AIzaSyAhNC9lWo46T-aqPzeP5WeACrlwcwWA9s8" />
 
         <activity
-            android:name="com.nishu.inventory_management_and_order_processing_system.MapsActivity"
+            android:name="com.develop.online_order_processing_system.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.ProfileForCompany" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.SubmitShopKeeperInfo" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.SubmitCompanyInfo" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.SubmitProduct" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.ProfileForShopkeeper" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Login" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.Registration" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.MainActivity" />
-        <activity android:name="com.nishu.inventory_management_and_order_processing_system.WelcomeScreen">
+        <activity android:name="com.develop.online_order_processing_system.ProfileForCompany" />
+        <activity android:name="com.develop.online_order_processing_system.SubmitShopKeeperInfo" />
+        <activity android:name="com.develop.online_order_processing_system.SubmitCompanyInfo" />
+        <activity android:name="com.develop.online_order_processing_system.SubmitProduct" />
+        <activity android:name="com.develop.online_order_processing_system.ProfileForShopkeeper" />
+        <activity android:name="com.develop.online_order_processing_system.Login" />
+        <activity android:name="com.develop.online_order_processing_system.Registration" />
+        <activity android:name="com.develop.online_order_processing_system.MainActivity" />
+        <activity android:name="com.develop.online_order_processing_system.WelcomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
