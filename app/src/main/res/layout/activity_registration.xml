@@ -19,7 +19,7 @@
                 android:id="@+id/logoForRegId"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/smart_field_logo" />
+                android:src="@drawable/logo_online_app" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
